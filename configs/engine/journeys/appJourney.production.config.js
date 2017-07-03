@@ -5,7 +5,6 @@ export default {
       app: [
         './src/journeys/appJourney/app.mount.jsx',
       ],
-      styles: './src/sass/layouts/appJourney/react-application.scss',
     },
     output: {
       foldersFilesMap: {

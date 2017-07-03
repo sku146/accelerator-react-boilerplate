@@ -3,7 +3,7 @@ options:
   max-warnings: 20
 
 files:
-  include: 'src/sass/**/*.s+(a|c)ss'
+  include: 'src/styles/**/*.s+(a|c)ss'
 
 severity: error
 

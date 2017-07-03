@@ -1,15 +1,13 @@
 import React from 'react';
+import copyProvider from 'copies/appJourney';
 
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+const getCopy = copyProvider.getResource;
 
-  render() {
-    return (
-      <div className="home-page">
-        <h1>React Application Accelerator</h1>
-        <h3>Plain React Sample Project</h3>
-      </div>);
-  }
-}
+const Home = () => (
+  <div className="home-page">
+    <h1>{getCopy('home.title')}</h1>
+    <h3>{getCopy('home.subtitle')}</h3>
+  </div>
+);
+
+export default Home;

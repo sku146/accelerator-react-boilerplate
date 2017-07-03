@@ -13,7 +13,7 @@
     "doc": "build-engine --doc",
     "postinstall": "node scripts/npm-check.js",
     "check": "npm-check -u",
-    "test": "exit 0"
+    "test": "build-engine --lint --test"
   },
   "keywords": [
     "Webpack 2",
