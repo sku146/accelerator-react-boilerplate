@@ -1,0 +1,51 @@
+{
+  "name": "react-sample-project",
+  "version": "0.0.1",
+  "description": "React Application Accelerator - Sample React Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "build-engine --server",
+    "build": "build-engine --build development",
+    "release": "build-engine --build production",
+    "lint": "build-engine --lint",
+    "test:watch": "build-engine --test watchAll",
+    "test:unit": "build-engine --test",
+    "doc": "build-engine --doc",
+    "postinstall": "node scripts/npm-check.js",
+    "check": "npm-check -u",
+    "test": "build-engine --lint --test"
+  },
+  "keywords": [
+    "Webpack 2",
+    "Application",
+    "Accelerator",
+    "Sample",
+    "React",
+    "Project"
+  ],
+  "author": {
+    "name": "sku146",
+    "email": "skumar146@sapient.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 4",
+    "npm": ">= 3"
+  },
+  "dependencies": {
+    "history": "^4.6.3",
+    "immutable": "^3.8.1",
+    "keymirror": "^0.1.1",
+    "lodash": "^4.17.4",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "enzyme": "^2.9.1",
+    "accelerator-build-engine": "^1.0.0"
+  }
+}

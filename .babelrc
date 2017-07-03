@@ -1,0 +1,28 @@
+{
+  "presets": ["accelerator/webpack"],
+  "env": {
+    "compile": {
+      "presets": ["accelerator/latest"]
+    },
+    "development": {
+      "plugins": ["react-hot-loader/babel"]
+    },
+    "test": {
+      "presets": ["accelerator"]
+    }
+  },
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "^assets(.*)$": "<rootDir>/src/assets$1",
+        "^components(.*)$": "<rootDir>/src/components$1",
+        "^journeys(.*)$": "<rootDir>/src/journeys$1",
+        "^copies(.*)$": "<rootDir>/src/copies$1",
+        "^styles(.*)$": "<rootDir>/src/styles$1",
+        "^utils(.*)$": "<rootDir>/src/utils$1"
+      }
+    }]
+  ],
+}
+

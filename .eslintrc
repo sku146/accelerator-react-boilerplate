@@ -1,0 +1,7 @@
+{
+  "extends":[
+    "accelerator",
+    "accelerator/lodash",
+    "accelerator/webpack"
+  ]
+}
